@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* .register-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1e2a38;
+    border-radius: 8px;
+    overflow: hidden;
+  } */
+  .register-container {
+    display: flex;
+    flex-direction: column; /* Make it stack vertically by default */
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #207ce6;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .register-left {
+    flex: 1;
+    background-color: #4b94dd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .image-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .slogan {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .register-right {
+    flex: 2;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #1e2a38;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  .login-link {
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .form-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* .input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+   */
+
+   .input-group {
+    display: flex;
+    flex-direction: column; /* Make inputs stack on smaller screens */
+    margin-bottom: 15px;
+   }
+
+
+  /* input {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  } */
+  input {
+    margin-bottom: 10px; /* Add spacing between stacked inputs */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  input:first-child {
+    margin-left: 0;
+  }
+  
+  input:last-child {
+    margin-right: 0;
+  }
+  
+  .terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .terms input {
+    margin-right: 10px;
+  }
+  
+  .terms a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .create-account-btn {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .create-account-btn:hover {
+    background-color: #d35400;
+  }
+  
+  /* .social-signup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  } */
+  .social-signup {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+  
+  .facebook-btn,
+  .twitter-btn {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .facebook-btn {
+    background-color: #3b5998;
+  }
+  
+  .twitter-btn {
+    background-color: #1da1f2;
+  }
+  
+  footer {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+
+  @media (min-width: 768px) {
+    .register-container {
+      flex-direction: row; /* Side-by-side layout for larger screens */
+    }
+  
+    .register-left {
+      flex: 1;
+      padding: 40px;
+    }
+  
+    .register-right {
+      flex: 2;
+      padding: 40px;
+    }
+  
+    .input-group {
+      flex-direction: row; /* Place inputs side by side */
+    }
+  
+    input {
+      margin: 0 10px;
+    }
+  
+    input:first-child {
+      margin-left: 0;
+    }
+  
+    input:last-child {
+      margin-right: 0;
+    }
+  
+    .social-signup {
+      flex-direction: row; /* Place buttons side by side */
+      gap: 10px;
+    }
+  }
+  
